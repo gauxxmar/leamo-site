@@ -5,17 +5,30 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
-    <img class="logo" src="img/Leamo-Logo.svg" alt="logo" />
-    <div class="header"></div>
-    <div class="header-img">"When life gives you lemons, drink a Leamo"</div>
+    <nav class="first-logo">
+      <a href="#"><img class="logo" src="img/Leamo-Logo.svg" alt="logo" /></a>
+    </nav>
+    <div class="header">
+      <div class="box">
+        <nav class="language">
+          <a href="#">FR</a>
+          <a href="#">DE</a>
+          <a href="#">EN</a>
+        </nav>
+      </div>
+    </div>
+    <div class="logo-moto">
+      <img class="header-img" src="img/header.jpg" alt="cocktail" />
+      <h1>"When life gives you lemons, drink a Leamo"</h1>
+    </div>
   </head>
   <body>
     <div class="l-peach">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <h1>qui sommes nous ?</h1>
-            <p>
+            <p class="title">qui sommes nous ?</p>
+            <p class="text">
               Agitateur de tendances alimentaires "healthy". On aime le bon, le
               beau et le sain. Notre credo : se faire plaisir tout en se faisant
               du bien ! Notre mission est de développer des marques innovantes
@@ -23,7 +36,14 @@
               plus grand nombre des alternatives de consommation responsable.
               Véritable laboratoire de tendances alimentaires, AlterFood propose
               des innovations responsables destinées à une population soucieuse
-              de son alimentation.
+              de son alimentation. C’est aujourd’hui 20 marques, dont 8 marques
+              propres, et plus de 150 produits commercialisés dans plus de 5500
+              points de vente en France. Un catalogue 80% bio et 100% naturel.
+              Alterfood propose ainsi une marque engagée: Leamo. Ce sont des
+              softs de qualité aux recettes naturelles. Rafraîchissants, ils
+              mettent en valeur un sourçing éthique pour utiliser des
+              ingrédients de qualité qui donnent toute leur authenticité aux
+              saveurs de ces boissons.
             </p>
           </div>
         </div>
@@ -33,11 +53,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <img src="img/tonic.jpg" alt="tonic" />
+            <img class="produit" src="img/tonic.jpg" alt="tonic" />
           </div>
           <div class="col-12 col-lg-6">
-            <h1>NOS TONICS</h1>
-            <p>
+            <p class="product-title">NOS TONICS</p>
+            <p class="text">
               Les tonics de Leamo sont des boissons à base de quinine aux vertus
               antioxydantes réalisées avec nos mixologues  partenaires et sont
               parfaites pour réaliser des cocktails. Nos tonics sont réalisées
@@ -48,7 +68,7 @@
               sucrés que la moyenne mais renforcés en goût avec des notes
               aromatiques ils peuvent également se consommer sans alcool.
             </p>
-            <nav>
+            <nav class="more">
               <a href="#">en savoir plus</a>
             </nav>
           </div>
@@ -59,11 +79,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <img src="img/limonadevert.jpg" alt="cocktail" />
+            <img class="produit" src="img/limonadevert.jpg" alt="cocktail" />
           </div>
           <div class="col-12 col-lg-6">
-            <h1>NOS LIMONADES</h1>
-            <p>
+            <p class="product-title">NOS LIMONADES</p>
+            <p class="text">
               Leamo innove et lance en France le Arnold Palmer autrement appelé
               fifty/fifty, combinaison de limonade et d’un subtil gout de thé
               revigorant. Nos limonades fifty/fifty sont réaliseés avec des 
@@ -74,7 +94,7 @@
               mais renforcées en goût avec des notes aromatiques, elles sont
               parfaites pour les chaudes journées d’été.
             </p>
-            <nav>
+            <nav class="more">
               <a href="#">en savoir plus</a>
             </nav>
           </div>
@@ -85,11 +105,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <img src="img/soda.jpg" alt="cocktail" />
+            <img class="produit" src="img/soda.jpg" alt="cocktail" />
           </div>
           <div class="col-12 col-lg-6">
-            <h1>NOS SODAS</h1>
-            <p>
+            <p class="product-title">NOS SODAS</p>
+            <p class="text">
               Notre cola bio est moins sucré que la plupart des colas et se
               distingue grâce à de légères notes de citron vert, de clou de
               girofle et de cannelle. Notre infusion de maté bio est une boisson
@@ -100,7 +120,7 @@
               recettes traditionnelles, des ingrédients bio de première qualité,
               pour des boissons moins sucrées et toujours désaltérantes. 
             </p>
-            <nav>
+            <nav class="more">
               <a href="#">en savoir plus</a>
             </nav>
           </div>
@@ -111,11 +131,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <img src="img/ginger.jpg" alt="cocktail" />
+            <img class="produit" src="img/ginger.jpg" alt="cocktail" />
           </div>
           <div class="col-12 col-lg-6">
-            <h1>NOS GINGERS</h1>
-            <p>
+            <p class="product-title">NOS GINGERS</p>
+            <p class="text">
               Les gingers de Leamo sont des boissons à base de gingembre
               appelées des « softs » réalisées avec
               nos mixologues partenaires et sont parfaits pour réaliser des
@@ -127,22 +147,32 @@
               en goût avec des notes aromatiques ils peuvent également se
               consommer sans alcool.  
             </p>
-            <nav>
+            <nav class="more">
               <a href="#">en savoir plus</a>
             </nav>
           </div>
         </div>
       </div>
     </div>
-    <img src="img/nos engagements copy.webp" alt="" />
+    <div class="col-12 col-lg-6">
+      <p class="product-title">NOS engagements</p>
+      <p class="text">
+        Leamo s’engage a respecter des valeurs plus éco-responsables et healthy,
+        pour lutter contre la pollution et l’exportation des produits
+        alimentaires. Produit en europe, Leamo s’engage à produire des boissons:
+        Naturelles, vegan, sans additifs ni conservateurs, bio, dans un
+        contenant réutilisable et recyclable sans aucun plastique.
+      </p>
+    </div>
+    <img class="valeurs" src="img/engagements.svg" alt="VALEURS" />
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <img src="img/ptdevente.png" alt="menu" />
+          <img class="produit" src="img/ptdevente.png" alt="menu" />
         </div>
         <div class="col-12 col-lg-6">
-          <h1>NOS POINTS DE VENTE</h1>
-          <nav>
+          <p class="product-title">NOS POINTS DE VENTE</p>
+          <nav class="lieux">
             <a href="#">.Paris</a> <br />
             <a href="#">.Mérignac</a> <br />
             <a href="#">.Grenoble</a> <br />
@@ -153,36 +183,58 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row g-0">
         <div class="col-12">
-          <h1>
+          <p class="product-title">
             produits similaires sur
-            <nav><a href="#">AlterShop</a></nav>
-          </h1>
+            <a class="more-shop" href="#">AlterShop</a>
+          </p>
         </div>
         <div class="col-12 col-lg-4">
-          <img src="img/tensai-tea.webp" alt="cocktail" />
+          <div class="wrap-product">
+            <p class="other-product">tensaï tea</p>
+            <img
+              class="autre-produit"
+              src="img/tensaitea.webp"
+              alt="cocktail"
+            />
+          </div>
         </div>
         <div class="col-12 col-lg-4">
-          <img src="img/chilled.webp" alt="cocktail" />
+          <div class="wrap-product">
+            <p class="other-product">chilled</p>
+            <img class="autre-produit" src="img/chilled.webp" alt="cocktail" />
+          </div>
         </div>
         <div class="col-12 col-lg-4">
-          <img src="img/dame.webp" alt="cocktail" />
+          <div class="wrap-product">
+            <p class="other-product">dame gingembre</p>
+            <img class="autre-produit" src="img/dame.webp" alt="cocktail" />
+          </div>
         </div>
       </div>
     </div>
-    <img class="logo-footer" src="img/Leamo-Logo.svg" alt="logo" />
+    <nav>
+      <a href="#"
+        ><img class="logo-footer" src="img/Leamo-Logo.svg" alt="logo"
+      /></a>
+    </nav>
     <div class="footer">
       <nav>
         <a href="#">insta</a>
         <a href="#">mail</a>
       </nav>
-      <img
-        class="logo-alterfood"
-        src="img/logo-alterfood-color.svg"
-        alt="logo"
-      />
-      <p>® LEAMO is a brand from <nav> <a href="#">Alterfood</a></nav></p>
+      <nav>
+        <a href="#"
+          ><img
+            class="logo-alterfood"
+            src="img/logo-alterfood-color.svg"
+            alt="logo"
+        /></a>
+      </nav>
+      <p class="mention">
+        ® LEAMO is a brand from <a href="#">Alterfood</a> Mentions légales
+      </p>
     </div>
 
     <script src="js/main.js" type="module"></script>

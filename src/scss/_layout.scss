@@ -1,23 +1,30 @@
 .l-peach {
   background: url(../img/peches.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.l-quinine {
-  background: url(../img/quinine.svg);
+@media (max-width: 990px) {
+  .l-quinine {
+    background: url(../img/quinine.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 380px;
+  }
 }
 
 .l-citron {
   background: url(../img/citron-the.svg);
+  background-repeat: no-repeat;
 }
 
 .l-lime {
   background: url(../img/lime-girofle.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .l-ginger {
   background: url(../img/gingers.svg);
-}
-
-.header-img {
-  background: url(../img/311788591_626064969214372_6521142441886831128_n.jpg);
+  background-repeat: no-repeat;
 }

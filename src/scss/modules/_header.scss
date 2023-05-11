@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  width: 100vw;
+  height: 30px;
+  background-color: #f86953;
+}
+
+h1 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+}
+
+.first-logo {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.first-logo img:hover {
+  color: #fee275;
+}
+
+.box {
+  display: flex;
+  justify-content: end;
+}
+
+.language {
+  font-family: "Satoshi";
+  font-size: 8px;
+  font-weight: 600;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-moto {
+  position: relative;
+  font-size: 24px;
+  font-family: "Satoshi";
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 100px 50px;
+}

@@ -2,47 +2,151 @@
 @import "layout";
 @import "modules/example";
 @import "bootstrap/scss/bootstrap-grid";
-.row + .row {
+@import "modules/header";
+@import "modules/footer";
+/*.row + .row {
   margin-top: 16px;
 }
 
-.row > .col,
+/*.row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}*/
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/transfonter.org-20230504-071036/Satoshi-Regular.woff2")
+      format("woff2"),
+    url("../font/transfonter.org-20230504-071036/Satoshi-Regular.woff")
+      format("woff");
 }
 
-.header {
-  width: 100%;
-  height: 30px;
-  background-color: #f86953;
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/transfonter.org-20230504-071036/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("../font/transfonter.org-20230504-071036/Satoshi-Medium.woff")
+      format("woff");
 }
 
-.header-img {
-  width: 100%;
-  height: 500px;
+@font-face {
+  font-family: "Satoshi";
+  src: url("../font/transfonter.org-20230504-071036/Satoshi-Light.woff2")
+      format("woff2"),
+    url("../font/transfonter.org-20230504-071036/Satoshi-Light.woff")
+      format("woff");
+}
+
+.l-peach {
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  width: 30px;
+.title {
+  font-family: "Satoshi";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px 0;
 }
 
-.footer {
+.product-title {
+  font-family: "Satoshi";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  line-height: 20px;
+  margin: 0 60px;
+}
+
+.more {
+  font-family: "Satoshi";
+  font-size: 8px;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.more:hover,
+.lieux a:hover,
+.more-shop:hover {
+  color: #f86953;
+}
+
+.more-shop {
+  font-family: "Satoshi";
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: underline;
+  font-weight: 600;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.produit {
+  padding: 50px;
+}
+
+.autre-produit {
+  position: relative;
+}
+
+.lieux {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.lieux a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 2.2;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.wrap-product {
+  position: relative;
   width: 100%;
-  height: 500px;
-  background-color: #f86953;
 }
 
-.logo-footer {
+.other-product {
   position: absolute;
-  width: 120px;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-family: "Satoshi";
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
-.logo-alterfood {
-  position: absolute;
-  width: 70px;
+.other-product:hover {
+  color: #fee275;
+}
+
+.valeurs {
+  position: relative;
+  width: 600px;
+  padding: 50px;
 }
