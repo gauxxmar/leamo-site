@@ -4,6 +4,13 @@
   background-position: center;
 }
 
+.l-quinine {
+  background: url(../img/quinine.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 380px;
+}
+
 @media (max-width: 990px) {
   .l-quinine {
     background: url(../img/quinine.svg);

@@ -5,6 +5,12 @@
   background-color: #f86953;
 }
 
+@media (min-width: 500px) {
+  .header {
+    height: 50px;
+  }
+}
+
 h1 {
   position: absolute;
   inset: 0;
@@ -16,8 +22,17 @@ h1 {
 
 .logo {
   position: absolute;
+  padding-top: 12px;
+  padding-left: 10px;
   z-index: 1;
   width: 80px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 50px;
+    padding-top: 8px;
+  }
 }
 
 .first-logo {
@@ -36,9 +51,18 @@ h1 {
 
 .language {
   font-family: "Satoshi";
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 600;
+  padding-right: 10px;
+  padding-top: 16px;
   color: white;
+}
+
+@media (max-width: 500px) {
+  .language {
+    padding-top: 10px;
+    font-size: 10px;
+  }
 }
 
 a {
@@ -53,5 +77,14 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
-  margin: 100px 50px;
+}
+
+.logo-moto h1 {
+  padding: 20px;
+}
+
+@media (min-width: 1348px) {
+  .header-img {
+    width: 100vw;
+  }
 }
