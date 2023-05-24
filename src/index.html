@@ -5,15 +5,43 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
-    <nav class="first-logo">
-      <a href="#"><img class="logo" src="img/Leamo-Logo.svg" alt="logo" /></a>
-    </nav>
+    <a class="first-logo" href="#"
+      ><img class="logo" src="img/Leamo-Logo.svg" alt="logo"
+    /></a>
     <div class="header">
       <div class="box">
         <nav class="language">
           <a href="#">FR</a>
           <a href="#">DE</a>
           <a href="#">EN</a>
+        </nav>
+        <input id="burger" type="checkbox" />
+        
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <p class="burger-titles">
+          NOS PRODUITS</p>
+            <div class="wrap-burger-subtitles">
+              <li><a href="#">Tonics</a></li>                </a></li>
+              <li><a href="#">Limonades</a></li>
+              <li><a href="#">Sodas</a></li>
+              <li><a href="#">Ginger Beers</a></li>
+            </div>
+            <p class="burger-titles">
+              A PROPOS</p>
+            <div class="wrap-burger-subtitles">
+              <li><a href="#">Points de vente</a></li>
+              <li><a href="#">Nos valeurs</a></li>
+              <li><a href="#">Nos recettes</a></li>
+              <li><a href="#">Contacts</a></li>
+            </div>
+          </ul>
         </nav>
       </div>
     </div>
@@ -156,15 +184,17 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6">
-      <p class="product-title">NOS engagements</p>
-      <p class="text">
-        Leamo s’engage a respecter des valeurs plus éco-responsables et healthy,
-        pour lutter contre la pollution et l’exportation des produits
-        alimentaires. Produit en europe, Leamo s’engage à produire des boissons:
-        Naturelles, vegan, sans additifs ni conservateurs, bio, dans un
-        contenant réutilisable et recyclable sans aucun plastique.
-      </p>
+    <div class="wrap-engagements">
+      <div class="col-12 col-lg-6">
+        <p class="product-title">NOS engagements</p>
+        <p class="text">
+          Leamo s’engage a respecter des valeurs plus éco-responsables et
+          healthy, pour lutter contre la pollution et l’exportation des produits
+          alimentaires. Produit en europe, Leamo s’engage à produire des
+          boissons: Naturelles, vegan, sans additifs ni conservateurs, bio, dans
+          un contenant réutilisable et recyclable sans aucun plastique.
+        </p>
+      </div>
     </div>
     <img class="valeurs" src="img/engagements.svg" alt="VALEURS" />
     <div class="container">

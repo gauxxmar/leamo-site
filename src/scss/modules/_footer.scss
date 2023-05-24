@@ -37,10 +37,25 @@
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  .mention {
+    font-size: 6px;
+  }
+}
+
 .contacts {
   display: flex;
-  justify-content: space-between;
-  width: 50px;
+  justify-content: flex-start;
   padding-top: 300px;
   margin-left: 60px;
+}
+
+.insta {
+  width: 30px;
+}
+
+.mail {
+  width: 35px;
+  margin-top: 2px;
+  margin-left: 20px;
 }

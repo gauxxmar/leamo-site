@@ -1,7 +1,8 @@
 .l-peach {
   background: url(../img/peches.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 80px;
+  background-size: 320px;
 }
 
 .l-quinine {
@@ -15,23 +16,61 @@
   .l-quinine {
     background: url(../img/quinine.svg);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 380px;
+    background-position: right 450px;
+    background-size: 400px;
   }
 }
 
 .l-citron {
   background: url(../img/citron-the.svg);
   background-repeat: no-repeat;
+  background-position: left;
+  background-size: 500px;
+}
+
+@media (min-width: 1400px) {
+  .l-citron {
+    background-size: 500px;
+  }
+}
+
+@media (max-width: 990px) {
+  .l-citron {
+    background: url(../img/citron-the.svg);
+    background-repeat: no-repeat;
+    background-position: left 400px;
+    background-size: 420px;
+  }
 }
 
 .l-lime {
   background: url(../img/lime-girofle.svg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 450px;
+}
+
+@media (max-width: 990px) {
+  .l-lime {
+    background: url(../img/lime-girofle.svg);
+    background-repeat: no-repeat;
+    background-position: right 450px;
+    background-size: 400px;
+  }
 }
 
 .l-ginger {
   background: url(../img/gingers.svg);
   background-repeat: no-repeat;
+  background-position: left;
+  background-size: 230px;
+}
+
+@media (max-width: 990px) {
+  .l-ginger {
+    background: url(../img/gingers.svg);
+    background-repeat: no-repeat;
+    background-position: left 300px;
+    background-size: 250px;
+  }
 }
