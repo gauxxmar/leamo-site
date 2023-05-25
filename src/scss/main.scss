@@ -4,17 +4,7 @@
 @import "bootstrap/scss/bootstrap-grid";
 @import "modules/header";
 @import "modules/footer";
-/*.row + .row {
-  margin-top: 16px;
-}
 
-/*.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}*/
 @font-face {
   font-family: "Satoshi";
   src: url("../font/transfonter.org-20230504-071036/Satoshi-Regular.woff2")
@@ -43,28 +33,6 @@
   position: relative;
 }
 
-.img-size {
-  height: 500px;
-}
-
-@media (max-width: 387px) {
-  .img-size {
-    height: 720px;
-  }
-}
-
-@media (min-width: 768px) {
-  .img-size {
-    padding: 0 100px;
-  }
-}
-
-@media (min-width: 992px) {
-  .img-size {
-    padding: 0 200px;
-  }
-}
-
 .title {
   font-family: "Satoshi";
   font-size: 14px;
@@ -72,7 +40,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  margin: 30px 0;
+  margin: 50px 0 20px;
 }
 
 .product-title {
@@ -82,13 +50,25 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  padding-top: 80px;
+}
+
+.product-title-droite {
+  font-family: "Satoshi";
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 80px;
 }
 
 .text {
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 30px;
   margin: 0 60px;
 }
 
@@ -98,6 +78,56 @@
   }
 }
 
+@media (min-width: 990px) {
+  .text {
+    justify-content: center;
+  }
+}
+
+.text-droite {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  line-height: 25px;
+  margin: 0 60px;
+}
+
+@media (max-width: 480px) {
+  .text-droite {
+    font-size: 9px;
+  }
+}
+
+.text-intro {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  line-height: 25px;
+  margin: 0 60px;
+}
+
+@media (max-width: 515px) {
+  .text-intro {
+    font-size: 9px;
+  }
+}
+
+.text-intro-droite {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  line-height: 25px;
+  margin: 0 60px;
+}
+
+@media (min-width: 990px) {
+  .text-intro-droite {
+    padding: 50px 0 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .text-intro-droite {
+    font-size: 9px;
+  }
+}
 .wrap-engagements {
   display: flex;
   justify-content: center;
@@ -117,9 +147,23 @@
   transition-timing-function: ease-in-out;
 }
 
+.more-droite {
+  font-family: "Satoshi";
+  font-size: 8px;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
 .more:hover,
 .lieux a:hover,
-.more-shop:hover {
+.more-shop:hover,
+.more-droite:hover {
   color: #f86953;
 }
 
@@ -138,6 +182,10 @@
   padding: 50px;
 }
 
+.produit-droite {
+  padding: 50px;
+}
+
 .autre-produit {
   position: relative;
   display: flex;
@@ -148,12 +196,12 @@
 
 .lieux {
   text-align: center;
-  padding-bottom: 50px;
+  padding: 50px;
 }
 
 .lieux a {
   font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 2.2;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
